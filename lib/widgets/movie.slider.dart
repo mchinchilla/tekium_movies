@@ -20,7 +20,7 @@ class MovieSlider extends StatefulWidget {
 
 class _MovieSliderState extends State<MovieSlider> {
 
-  final ScrollController scrollController = new ScrollController();
+  final ScrollController scrollController = ScrollController();
 
   @override
   void initState() {
@@ -93,7 +93,7 @@ class _MoviePoster extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
 
-    movie.heroId = '${ heroId }';
+    movie.heroId = heroId;
 
     return Container(
       width: 130,
@@ -108,7 +108,7 @@ class _MoviePoster extends StatelessWidget {
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(20),
                 child: FadeInImage(
-                  placeholder: AssetImage('assets/no-image.jpg'),
+                  placeholder: const AssetImage('assets/no-image.jpg'),
                   image: NetworkImage(movie.fullPosterImg),
                   width: 130,
                   height: 190,

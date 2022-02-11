@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:tekium_movies/models/models.dart';
 import 'package:tekium_movies/providers/movies_provider.dart';
 
-import '../models/models.dart';
 
 class CastingCards extends StatelessWidget {
 
