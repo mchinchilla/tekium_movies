@@ -10,7 +10,7 @@ import 'package:tekium_movies/models/now_playing_response.dart';
 
 class MoviesProvider extends ChangeNotifier{
 
-  String _apiKey   = '1865f43a0549ca50d341dd9ab8b29f49';
+  String _apiKey   = '1865f43a0549ca50d341ddeab8b29f49';
   String _baseUrl  = 'api.themoviedb.org';
   String _language = 'es-HN';
 
